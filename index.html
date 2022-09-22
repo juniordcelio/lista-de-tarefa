@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha lista de tarefas - Atualizada</h1>
+        <button class="addBtn" onclick="toggleModalAdd()">Add tarefa</button>
+    </header>
+
+    <main>
+        <section id="modal" class="closeModal">
+            <div class="card">
+                <h2>Adicione a tarefa</h2>
+                <label for="desc">Descrição</label>
+                <input id="taskDesc" name="desc" type="text" autofocus>
+                <label for="date">Data</label>
+                <input id="taskDate" type="date" name="date">
+                <p class="inputWarn">Preencha a tarefa!</p>
+                <div class="modalBtns">
+                    <button class="cancelBtn" onclick="toggleModalAdd()">Cancelar</button>
+                    <button class="confirmBtn" onclick="addTask()" onkeyup="toggleModalAdd()">Adicionar</button>
+                </div>
+            </div>
+        </section>
+        <article id="toDoLists">
+            <section>
+                <div>
+                    <h2>Tarefas:</h2>
+                    <div class="titleBorder"></div>
+                </div>
+                <div id="list"></div>
+            </section>
+            <!-- <section>
+                <div>
+                    <h2>Tarefas concluídas:</h2>
+                    <div class="titleBorder"></div>
+                </div>
+                <div id="finishedList"></div>
+            </section> -->
+        </article>
+    </main>
+
+    <footer>
+        <h4>Lembre de tudo, tente fazer tudo!</h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

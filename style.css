@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #041c32;
+    color: #d5d5d5;
+}
+.addBtn {
+    background-color: #ecb356;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.addBtn:hover {
+    background-color: #fdc57a;
+}
+
+
+#modal {
+    background-color: #064663c6;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 250px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #d5d5d5;
+    color: #041c32;
+}
+.inputWarn {
+    display: none;
+    color: #f00;
+    padding: 5px 0 0 5px;
+    margin: 0px;
+    font-size: 12px;
+}
+.modalBtns {
+    margin: 30px 0  10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.modalBtns > button {
+    margin: 3px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+}
+.cancelBtn {
+    background-color: rgb(180, 3, 3);
+}
+.confirmBtn {
+    background-color: #00f;
+}
+.openModal {
+    display: inline-block;
+}
+.closeModal {
+    display: none;
+}
+
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #064663;
+    color: #d5d5d5;
+}
+#toDoLists {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+li {
+    margin-top: 10px;
+}
+.task {
+    padding: 30px 30px 10px 30px;
+    background-color: #04293a;
+    border-top-right-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #d5d5d5;
+}
